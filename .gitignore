@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+credentials/
+token.json
+data/example_contact.json
+.vscode/
+resume/

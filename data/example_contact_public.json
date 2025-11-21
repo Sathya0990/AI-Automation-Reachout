@@ -1,0 +1,9 @@
+[
+  {
+    "Name": "Sample Person",
+    "Job Title": "HR Leader",
+    "Company": "ExampleCorp",
+    "Email": "sample@example.com",
+    "Extra_Context": "Sample context for public demo only."
+  }
+]

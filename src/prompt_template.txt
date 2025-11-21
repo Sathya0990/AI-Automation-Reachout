@@ -1,0 +1,44 @@
+Goal
+Generate a direct, bold, human outreach email for the AI Prompt & Automation Analyst role at Raisin. The email must match the tone and structure provided below.
+
+Context
+Job summary:
+{{JOB_SUMMARY}}
+
+My background:
+{{PROFILE_SUMMARY}}
+
+Contact:
+Name: {{NAME}}
+Role: {{ROLE}}
+Company: {{COMPANY}}
+Extra context: {{EXTRA_CONTEXT}}
+
+Style and Tone
+- Sounds personal, confident, human—not corporate.
+- Short, direct, friendly, and honest.
+- Two short paragraphs max.
+- Not overly formal.
+- Avoid buzzwords.
+
+Email structure
+The email MUST follow this structure exactly:
+
+Paragraph 1:
+Introduce myself (Sathya Prabhala from NYC). Mention I found the AI Prompt & Automation Analyst role intriguing and already applied through the portal. Explain that instead of stopping there, I built an outreach automation script—which is the system that sent this email—to show that I understand prompt engineering and automation deeply.
+
+Paragraph 2:
+Explain briefly that I built the workflow in a couple hours, link my GitHub repo and mention that my résumé is attached. Mention that I was recently laid off, can start immediately, and I’m eager to contribute to a team that values creativity and ownership. Include the cultural line: “Your growth is our growth. Our success is your success.”
+
+Closing:
+"Best,  
+Sathya Prabhala  
+607-245-6637  
+sprabhala@binghamton.edu"
+
+Output format
+Return strict JSON:
+{
+  "subject": "...",
+  "body": "..."
+}
