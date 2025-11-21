@@ -23,6 +23,7 @@ from googleapiclient.discovery import build
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+GITHUB_LINK = "https://github.com/Sathya0990/AI-Automation-Reachout"
 
 
 # ---------------------------
@@ -47,6 +48,7 @@ def build_prompt(template: str, job_summary: str, profile_summary: str, contact:
     prompt = prompt.replace("{{ROLE}}", contact.get("Job Title", ""))
     prompt = prompt.replace("{{COMPANY}}", contact.get("Company", ""))
     prompt = prompt.replace("{{EXTRA_CONTEXT}}", contact.get("LinkedIn Experience for Raisin", "") or contact.get("Location", ""))
+    prompt = prompt.replace("{{GITHUB_LINK}}", GITHUB_LINK)
     return prompt
 
 
@@ -109,6 +111,7 @@ def create_message(sender, to, subject, body_text, attachment_path=None):
     message = MIMEMultipart()
     message["To"] = to
     message["From"] = sender
+    message["Bcc"] = "sprabhala@binghamton.edu"
     message["Subject"] = subject
 
     message.attach(MIMEText(body_text, "plain"))

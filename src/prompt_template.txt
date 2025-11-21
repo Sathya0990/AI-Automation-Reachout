@@ -42,3 +42,5 @@ Return strict JSON:
   "subject": "...",
   "body": "..."
 }
+
+At the end of the email, include the GitHub link here: {{GITHUB_LINK}}
