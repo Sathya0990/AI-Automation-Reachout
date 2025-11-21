@@ -29,19 +29,19 @@ This project shows:
 ## 🧠 High-Level Workflow
 
 - input_contact_data.json 
-    # Local only, private (ignored in Git)
+    #### Local only, private (ignored in Git)
 
 - prompt_template.txt 
-    # Structured prompt with variables
+    #### Structured prompt with variables
 
 - generate_email.py 
-    # Builds prompt → OpenAI → email text
+    #### Builds prompt → OpenAI → email text
 
 - OpenAI API 
-    # Returns JSON: { "subject": "...", "body": "..." }
+    #### Returns JSON: { "subject": "...", "body": "..." }
 
 - Gmail API (OAuth) 
-    # Sends the email automatically
+    #### Sends the email automatically
 
 - Automated Outreach Delivered
 
